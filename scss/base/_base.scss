@@ -1,0 +1,47 @@
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+button,
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    letter-spacing: 0.03em;
+    margin: 0;
+}
+
+.list {
+    @extend %list;
+}
+
+.nav-item {
+    margin: 0;
+}
+
+.container {
+    @extend %container;
+}
+
+.section {
+    @extend %section;
+}
+
+.title {
+    font-style: normal;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    text-align: center;
+    margin-bottom: 50px;
+}

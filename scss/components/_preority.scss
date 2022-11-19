@@ -1,0 +1,42 @@
+.preority__item {
+    display: flex;
+    padding-left: 0;
+    gap: 30px;
+}
+
+
+.preority__list {
+    flex-basis: calc((100% - 90px) / 4);
+    padding: 0;
+    
+}
+
+.icons {
+    @include centeredFlex;
+    height: 120px;
+    background: var(--bg-button);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+
+.icons__img {
+    width: 70px;
+    height: 70px;
+    fill: currentColor;
+}
+
+.preority__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+.preority__text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--text-color);
+}

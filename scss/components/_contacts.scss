@@ -1,0 +1,47 @@
+.nav__contact {
+    display: flex;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.12;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    margin-left: auto;
+    padding: 0;
+    gap: 50px;
+}
+
+.nav__connection {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, 
+    &:focus {
+        color: var(--accent-color);
+        
+    }
+}
+
+
+.nav__icons {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.nav__links {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+}

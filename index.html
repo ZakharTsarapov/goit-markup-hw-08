@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Студія</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- head of site -->
+    <header class="site-header">
+      <div class="container header-container">
+        <nav class="nav">
+          <a href="./index.html" class="site-logo"
+            ><span class="logo">Web</span>Studio</a
+          >
+          <ul class="nav__item list">
+            <li class="nav__list">
+              <a href="./index.html" class="nav__link nav__link--current">Студія</a>
+            </li>
+            <li class="nav__list">
+              <a href="./portfolio.html" class="nav__link">Портфоліо</a>
+            </li>
+            <li class="nav__list">
+              <a href="" class="nav__link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="nav__contact list">
+          <li class="nav__connection">
+            <a href="mailto:info@devstudio.com" class="nav__links">
+              <svg width="16" height="12" class="nav__icons">
+                <use
+                  class="envelope"
+                  href="./images/goit-svg.svg#icon-envelope"
+                ></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="nav__connection">
+            <a href="tel:+380961111111" class="nav__links">
+              <svg width="10" height="16" class="nav__icons">
+                <use
+                  class="smartphone"
+                  href="./images/goit-svg.svg#icon-smartphone"
+                ></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <!-- main content -->
+    <main>
+      <!-- hero -->
+      <section class="hero overlay">
+        <div class="container hero__container">
+          <h1 class="hero__title">
+            ЕФЕКТИВНІ РІШЕННЯ ДЛЯ <br />
+            ВАШОГО БІЗНЕСУ
+          </h1>
+          <button type="button" class="hero__button" data-modal-open>
+            Замовити послугу
+          </button>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+              <button class="modal__button" data-modal-close>
+                <svg class="modal__btn" width="18px" height="18px">
+                  <use
+                    href="./images/goit-svg.svg#icon-X"
+                  ></use>
+                </svg>
+              </button>
+              <form class="register" autocomplete="off">
+                <strong class="strong"
+                  >Залиште свої дані, ми вам передзвонимо</strong
+                >
+                <div class="form" role="group">
+                  <label class="form__label">
+                    <span class="form__text"> Ім'я </span>
+                    <div class="form-container">
+                      <input
+                        type="text"
+                        name="username"
+                        class="form__input"
+                        required
+                      />
+                      <svg class="form__icon">
+                        <use href="./images/goit-svg.svg#icon-name"></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <label class="form__label">
+                    <span class="form__text"> Телефон </span>
+                    <div class="form-container">
+                      <input
+                        type="tel"
+                        name="tel"
+                        class="form__input"
+                        required
+                      />
+                      <svg class="form__icon">
+                        <use href="./images/goit-svg.svg#icon-phone"></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <label class="form__label">
+                    <span class="form__text"> Пошта </span>
+                    <div class="form-container">
+                      <input
+                        type="email"
+                        name="mail"
+                        class="form__input"
+                        required
+                      />
+                      <svg class="form__icon">
+                        <use href="./images/goit-svg.svg#icon-mail"></use>
+                      </svg>
+                    </div>
+                  </label>
+                  <label class="form__label">
+                    <span class="form__text"> Коментар </span>
+                    <textarea
+                      name="comment"
+                      rows="5"
+                      class="form__area"
+                      placeholder="Введіть текст"
+                    ></textarea>
+                  </label>
+                </div>
+                <label class="checkbox">
+                  <input
+                    type="checkbox"
+                    name="policy"
+                    value="accept-policy"
+                    class="checkbox__input"
+                  />
+                  <span class="checkbox__icon">
+                    <svg width="16px" height="15px" class="checkbox__check">
+                      <use href="./images/goit-svg.svg#icon-check2"></use>
+                    </svg>
+                  </span>
+                  <span class="checkbox__text">
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="" class="checkbox__link">Умови договору</a>
+                  </span>
+                </label>
+                <button type="submit" class="form__button">Відправити</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- our preority -->
+      <section class="section">
+        <div class="container preority">
+          <h2 class="title visually-hidden">Наші переваги</h2>
+          <ul class="list preority__item">
+            <li class="preority__list">
+              <div class="icons">
+                <svg class="icons__img">
+                  <use
+                    width="70px"
+                    height="70px"
+                    href="./images/goit-svg.svg#icon-antenna"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="preority__title">УВАГА ДО ДЕТАЛЕЙ</h3>
+              <p class="preority__text">
+                Ідейні міркування, і навіть початок повсякденної роботи з
+                формування позициї.
+              </p>
+            </li>
+            <li class="preority__list">
+              <div class="icons">
+                <svg class="icons__img">
+                  <use
+                    width="70px"
+                    height="70px"
+                    href="./images/goit-svg.svg#icon-clock"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="preority__title">ПУНКТУАЛЬНІСТЬ</h3>
+              <p class="preority__text">
+                Завдання організації, особливо рамки і місце навчання кадрів
+                тягне у себе.
+              </p>
+            </li>
+            <li class="preority__list">
+              <div class="icons">
+                <svg class="icons__img">
+                  <use
+                    width="70px"
+                    height="70px"
+                    href="./images/goit-svg.svg#icon-diagram"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="preority__title">ПЛАНУВАННЯ</h3>
+              <p class="preority__text">
+                Так само консультація з широким активом значною мірою зумовлює.
+              </p>
+            </li>
+            <li class="preority__list">
+              <div class="icons">
+                <svg class="icons__img">
+                  <use
+                    width="70px"
+                    height="70px"
+                    href="./images/goit-svg.svg#icon-astronaut"
+                  ></use>
+                </svg>
+              </div>
+              <h3 class="preority__title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+              <p class="preority__text">
+                Значимість цих проблем настільки очевидна, що реалізація
+                планових завдань.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- our work -->
+      <section class="work section">
+        <div class="container">
+          <h2 class="title">Чим ми займаємося</h2>
+          <ul class="list work__item">
+            <li class="work-li">
+              <div class="work-div">
+                <img
+                  src="./images/pic1.jpg"
+                  alt="праця за компютером"
+                  width="370"
+                />
+                <div class="text-div">
+                  <h3 class="text-div__title">ДЕСКТОПНІ ДОДАТКИ</h3>
+                </div>
+              </div>
+            </li>
+            <li class="work-li">
+              <div class="work-div">
+                <img
+                  src="./images/pic2.jpg"
+                  alt="праця за ноутбуком"
+                  width="370"
+                />
+                <div class="text-div">
+                  <h3 class="text-div__title">МОБІЛЬНІ ДОДАТКИ</h3>
+                </div>
+              </div>
+            </li>
+            <li class="work-li">
+              <div class="work-div">
+                <img
+                  src="./images/pic3.jpg"
+                  alt="праця на планшеті"
+                  width="370"
+                />
+                <div class="text-div">
+                  <h3 class="text-div__title">Дизайнерські рішення</h3>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- our team -->
+      <section class="section our-team">
+        <div class="container">
+          <h2 class="title">Наша команда</h2>
+          <ul class="list item">
+            <li class="item__list">
+              <img src="./images/team1.jpg" alt="Тиммейт1" width="270" />
+              <div class="team">
+                <h3 class="team__title">Ігор Дем'яненко</h3>
+                <p lang="en" class="team__text">Product Desinger</p>
+                <ul class="list social">
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="item__list">
+              <img src="./images/team2.jpg" alt="тиммейт2" width="270" />
+              <div class="team">
+                <h3 class="team__title">Ольга Рєпіна</h3>
+                <p lang="en" class="team__text">Frontend Developer</p>
+                <ul class="list social">
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="item__list">
+              <img src="./images/team3.jpg" alt="тиммейт3" width="270" />
+              <div class="team">
+                <h3 class="team__title">Микола Тарасов</h3>
+                <p lang="en" class="team__text">Marketing</p>
+                <ul class="list social">
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="item__list">
+              <img src="./images/team4.jpg" alt="тиммейт4" width="270" />
+              <div class="team">
+                <h3 class="team__title">Михайло Єрмаков</h3>
+                <p lang="en" class="team__text">UI Desinger</p>
+                <ul class="list social">
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-instagram"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-twitter"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-facebook"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="social__list">
+                    <a href="" class="social__links">
+                      <svg width="20px" height="20px">
+                        <use
+                          class="social__icon"
+                          href="./images/goit-svg.svg#icon-linkedin"
+                        ></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- clients -->
+      <section class="section">
+        <div class="container clients">
+          <h2 class="title">Постійні Клієнти</h2>
+          <ul clients__item list>
+            <li class="clients__list">
+              <a class="clients__links" href="">
+                <svg width="106px" height="60px">
+                  <use
+                    class="clients__icon"
+                    href="./images/goit-svg.svg#icon-logo"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__list">
+              <a class="clients__links" href="">
+                <svg width="106px" height="60px">
+                  <use
+                    class="clients__icon"
+                    href="./images/goit-svg.svg#icon-logo2"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__list">
+              <a class="clients__links" href="">
+                <svg width="106px" height="60px">
+                  <use
+                    class="clients__icon"
+                    href="./images/goit-svg.svg#icon-logo3"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__list">
+              <a class="clients__links" href="" width="170px">
+                <svg width="106px" height="60px">
+                  <use
+                    class="clients__icon"
+                    href="./images/goit-svg.svg#icon-logo4"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__list">
+              <a class="clients__links" href="">
+                <svg width="106px" height="60px">
+                  <use
+                    class="clients__icon"
+                    href="./images/goit-svg.svg#icon-logo5"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients__list">
+              <a class="clients__links" href="">
+                <svg width="106px" height="60px">
+                  <use
+                    class="clients__icon"
+                    href="./images/goit-svg.svg#icon-logo6"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer of site -->
+    <footer class="page-footer">
+      <div class="container footer">
+        <div class="footer-cont">
+          <a href="./index.html" class="site-logo"
+            ><span class="logo">Web</span
+            ><span class="logo--footer">Studio</span></a
+          >
+          <address class="footer-nav">
+            <ul class="list footer-nav__item">
+              <li class="footer-nav__list">
+                <span class="footer-nav__address"
+                  >м. Київ, пр-т Лесі Українки, 26</span
+                >
+              </li>
+              <li class="footer-nav__list">
+                <a href="mailto:info@devstudio.com" class="footer-nav__contacts"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="footer-nav__list">
+                <a href="tel:+380961111111" class="footer-nav__contacts"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social">
+          <span class="join">Приєднуйтесь</span>
+          <ul>
+            <li class="footer-social__list">
+              <a href="" class="footer-social__links">
+                <svg width="20px" height="20px">
+                  <use
+                    class="footer-social__icons"
+                    href="./images/goit-svg.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__list">
+              <a href="" class="footer-social__links">
+                <svg width="20px" height="20px">
+                  <use
+                    class="footer-social__icons"
+                    href="./images/goit-svg.svg#icon-twitter"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__list">
+              <a href="" class="footer-social__links">
+                <svg width="20px" height="20px">
+                  <use
+                    class="footer-social__icons"
+                    href="./images/goit-svg.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-social__list">
+              <a href="" class="footer-social__links">
+                <svg width="20px" height="20px">
+                  <use
+                    class="footer-social__icons"
+                    href="./images/goit-svg.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <form class="footer-form">
+          <label for="submail" class="footer-form__label"
+            >Підпишіться на розсилку</label
+          >
+          <div class="subscribe">
+            <input
+              type="text"
+              name="email"
+              placeholder="E-mail"
+              class="subscribe__input"
+              #="submail"
+            />
+            <button type="submit" class="subscribe-btn">
+              Підписатися
+              <svg width="24px" height="24px" class="subscribe-icon">
+                <use href="./images/goit-svg.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/modal.js"></script>
+  </body>
+</html>

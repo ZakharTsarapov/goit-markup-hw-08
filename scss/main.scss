@@ -1,0 +1,40 @@
+/* base*/ 
+@import './base/modern-normalize';
+@import './base/base';
+@import './base/font';
+
+/* utils*/ 
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './utils/varibles';
+@import './utils/visually-hidden';
+
+/* components */
+
+/* header */
+
+@import './components/header';
+@import './components/logo';
+@import './components/nav';
+@import './components/contacts';
+
+/* main */
+
+@import './components/hero';
+@import './components/modal';
+@import './components/register';
+@import './components/preority';
+@import './components/work';
+@import './components/team';
+@import './components/clients';
+
+/* footer */ 
+
+@import './components/footer';
+@import './components/footer-social';
+
+
+/* portfolio */
+
+@import './components/filters';
+@import './components/showcase';
