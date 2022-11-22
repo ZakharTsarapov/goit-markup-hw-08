@@ -1,6 +1,4 @@
 .site-logo {
-    display: inline-block;
-    align-items: center;
     font-family: $fontLogo;
     font-style: normal;
     font-weight: 700;
@@ -9,9 +7,6 @@
     letter-spacing: 0.03em;
     color: var(--logo-color);
     text-shadow: var(--text-shadow);
-    margin-right: 93px;
-    margin-bottom: 25px;
-    margin-top: 24px;
 }
 
 .logo {

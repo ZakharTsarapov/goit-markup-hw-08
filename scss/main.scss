@@ -12,14 +12,15 @@
 /* components */
 
 /* header */
-
 @import './components/header';
 @import './components/logo';
+@import './components/menu';
+@import './components/menu-navigation';
 @import './components/nav';
 @import './components/contacts';
 
-/* main */
 
+/* main */
 @import './components/hero';
 @import './components/modal';
 @import './components/register';
@@ -28,13 +29,14 @@
 @import './components/team';
 @import './components/clients';
 
-/* footer */ 
 
+/* footer */ 
 @import './components/footer';
 @import './components/footer-social';
+
 
 
 /* portfolio */
 
 @import './components/filters';
-@import './components/showcase';
+@import './components/showcase'

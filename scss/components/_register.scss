@@ -133,7 +133,7 @@
 }
 
 .checkbox__icon {
- @include centeredFlex(inline-flex);
+  @include centeredFlex(inline-flex);
   width: 16px;
   height: 15px;
   margin-left: 10px;
@@ -155,10 +155,15 @@
 
 .checkbox__text {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--text-color);
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .checkbox__link {

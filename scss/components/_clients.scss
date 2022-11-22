@@ -1,32 +1,41 @@
-.clients>ul {
-    display: flex;
-    padding: 0px;
-    list-style: none;
-    gap: 30px;
-
+.clients__item {
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .clients__list {
-    flex-basis: calc((100% - 150px) / 6);
-}
+    @media screen and (max-width: 767px) {
+        flex-basis: calc((100% - 30px) / 2);
+    }
+    
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        flex-basis: calc((100% - 60px) / 3)
+    }
 
-.clients__links {
-    @include centeredFlex;
-    height: 92px;
-    color: var(--bg-logo);
-    border-radius: 4px;
-    border: 1px solid var(--bg-logo);
-    transition: color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    border: 1px solid var(--accent-color);
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 150px) / 6);
     }
 }
 
+.clients__links {
+  @include centeredFlex;
+  height: 92px;
+  color: var(--bg-logo);
+  border-radius: 4px;
+  border: 1px solid var(--bg-logo);
+  transition: color, border;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
+  }
+}
+
 .clients__icon {
-    fill: currentColor;
+  fill: currentColor;
 }
