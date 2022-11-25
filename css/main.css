@@ -264,6 +264,7 @@ summary {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -737,14 +738,15 @@ body {
 
 /* main */
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background: var(--overlay2);
+  padding-top: 118px;
+  padding-bottom: 118px;
+  height: 400px;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .hero {
-    padding-top: 118px;
-    padding-bottom: 118px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
   }
 }
 
@@ -752,11 +754,42 @@ body {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/bg.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/bg.jpg);
+  background: var(--overlay2);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+@media screen and (max-width: 767px) {
+  .overlay {
+    background-image: url(../../images/hero/hero-phone.jpg);
+  }
+}
+@media screen and (max-width: 767px) and (min-device-pixel-ratio: 2), screen and (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), screen and (max-width: 767px) and (min-resolution: 192dpi), screen and (max-width: 767px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../../images/hero/hero-phone@2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .overlay {
+    background-image: url(../../images/hero/hero-tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (max-width: 1199px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../../images/hero/hero-tablet@2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .overlay {
+    background-image: url(../../images/hero/hero-desk.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .overlay {
+    background-image: url(../../images/hero/hero-desk@2x.jpg);
+  }
 }
 
 .hero__container {
