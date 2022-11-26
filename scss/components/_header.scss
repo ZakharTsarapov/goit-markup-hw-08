@@ -4,10 +4,13 @@
     border-style: solid;
     border-width: 0 0 1px 0;
     border-color: var(--herader-border);
+    padding-top: 16px;
+    padding-bottom: 16px;
 }
 
 .header-container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
 }
