@@ -1986,6 +1986,12 @@ body {
   border-color: var(--border-bottom);
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .scase.padding {
+    padding-bottom: 56px;
+  }
+}
+
 .scase__title {
   font-size: 18px;
   line-height: 2;
