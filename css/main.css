@@ -1945,6 +1945,12 @@ body {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1200px) {
+  .meta > img {
+    width: 370px;
+  }
+}
+
 .meta__cont {
   position: absolute;
   top: 0%;
