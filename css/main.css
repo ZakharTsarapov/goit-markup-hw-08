@@ -1821,13 +1821,27 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 40px;
   gap: 8px;
-  margin-bottom: 50px;
   padding-left: 0;
   border: transparent;
+}
+@media screen and (min-width: 768px) {
+  .filters__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 30px;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .filters__list {
+    margin-bottom: 50px;
+  }
 }
 
 .button {
@@ -1864,6 +1878,20 @@ body {
 
 .list.showcase__item {
   padding: 0;
+  gap: 30px;
+}
+@media screen and (min-width: 768px) {
+  .list.showcase__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .showcase {
@@ -1871,16 +1899,19 @@ body {
 }
 
 .showcase__list {
-  -ms-flex-preferred-size: calc((100% - 60px) / 3);
-      flex-basis: calc((100% - 60px) / 3);
-  margin-right: 30px;
-  margin-bottom: 30px;
+  width: 100%;
 }
-.showcase__list:nth-child(3n) {
-  margin-right: 0px;
+@media screen and (min-width: 768px) {
+  .showcase__list {
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
+  }
 }
-.showcase__list:nth-child(n+7) {
-  margin-bottom: 0px;
+@media screen and (min-width: 1200px) {
+  .showcase__list {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .showcase__link {
@@ -1965,16 +1996,4 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--text-color);
-}
-
-.list.showcase__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }/*# sourceMappingURL=main.css.map */
