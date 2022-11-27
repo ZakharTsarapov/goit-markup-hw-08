@@ -296,19 +296,30 @@
           <h2 class="title">Наша команда</h2>
           <ul class="list item">
             <li class="item__list">
-              <img
-                srcset="
-                  ./images/team1-270.jpg    270w,
-                  ./images/team1-354.jpg    354w,
-                  ./images/team1-450.jpg    450w,
-                  ./images/team1-270@2x.jpg 540w,
-                  ./images/team1-354@2x.jpg 708w,
-                  ./images/team1-450@2x.jpg 900w
-                "
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, 100vw"
-                src="./images/team1-450.jpg"
-                alt="Тиммейт1"
-              />
+               <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/team1-450.jpg    1x,
+                    ./images/team1-450@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/team1-354.jpg    1x,
+                    ./images/team1-354@2x.jpg 2x
+                  "
+                />
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/team1-270.jpg    1x,
+                    ./images/team1-270@2x.jpg 2x
+                  "
+                />
+                <img src="./images/team1-450.jpg" alt="Тиммейт2" />
+              </picture>
               <div class="team">
                 <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p lang="en" class="team__text">Product Desinger</p>
