@@ -1669,10 +1669,12 @@ body {
   }
 }
 
-.join {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .join {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .footer-social__list + .footer-social__list {
