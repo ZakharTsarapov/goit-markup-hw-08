@@ -31,7 +31,9 @@
 }
 
 .join {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .footer-social__list + .footer-social__list {
