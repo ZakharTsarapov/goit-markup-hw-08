@@ -30,6 +30,10 @@
   }
 }
 
+.join {
+  display: flex;
+}
+
 .footer-social__list + .footer-social__list {
   margin-left: 10px;
 }

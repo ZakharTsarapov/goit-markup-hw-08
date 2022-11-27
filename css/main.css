@@ -299,6 +299,7 @@ h5 {
 @media screen and (min-width: 1200px) {
   .title {
     font-size: 36px;
+    margin-bottom: 50px;
   }
 }
 
@@ -599,9 +600,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   list-style: none;
   margin-top: 64px;
   -ms-flex-wrap: wrap;
@@ -1668,6 +1669,12 @@ body {
   }
 }
 
+.join {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .footer-social__list + .footer-social__list {
   margin-left: 10px;
 }
@@ -1826,7 +1833,7 @@ body {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin-bottom: 40px;
-  gap: 8px;
+  gap: 15px 8px;
   padding-left: 0;
   border: transparent;
 }
@@ -1881,12 +1888,16 @@ body {
 .list.showcase__item {
   padding: 0;
   gap: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .list.showcase__item {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
